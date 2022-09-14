@@ -9,7 +9,7 @@ function getWeather() {
 
   latitud= textElement1.value;
   longitud= textElement2.value;
-  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+latitud+"&lon="+longitud+"&appid=7b402d34f50cc82a9fee3b7a73cf91bd",
+  $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+latitud+"&lon="+longitud+"&appid=9b4f5e18b89f0b63c4398f0afcc702ea",
     function(json) {
       console.log(json);
       $('#resultado').text(JSON.stringify(json));
