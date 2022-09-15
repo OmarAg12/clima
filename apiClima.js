@@ -11,9 +11,8 @@ function getWeather() {
   longitud= textElement2.value;
   $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+latitud+"&lon="+longitud+"&appid=9b4f5e18b89f0b63c4398f0afcc702ea",
     function(json) {
-      console.log(json);
-      $('#resultado').text(JSON.stringify(json));
+      console.log(json.weather[0].main);
+      $('#resultado').text(JSON.stringify(json.weather[0].main));
     }
   );
-result= Json.parse(resultElement.innerHTML);
 }
