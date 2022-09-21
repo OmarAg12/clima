@@ -5,7 +5,7 @@ function getWeather() {
 
   var textElement1 = document.getElementById("latitud");
   var textElement2 = document.getElementById("longitud");
- // var resultElement =  document.getElementById("resultado");
+
 
   latitud= textElement1.value;
   longitud= textElement2.value;
