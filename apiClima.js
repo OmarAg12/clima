@@ -6,7 +6,7 @@ function getWeather() {
   var textElement1 = document.getElementById("latitud");
   var textElement2 = document.getElementById("longitud");
 
-
+//jajajaj
   latitud= textElement1.value;
   longitud= textElement2.value;
   $.getJSON("https://api.openweathermap.org/data/2.5/weather?lat="+latitud+"&lon="+longitud+"&appid=9b4f5e18b89f0b63c4398f0afcc702ea",
